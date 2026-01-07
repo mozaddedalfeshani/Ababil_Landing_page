@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { Github, Star, GitFork, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { ThemeToggle } from "./ThemeToggle";
 import { LanguageToggle } from "./LanguageToggle";
+import { FaGithub, FaStar, FaCodeBranch } from "react-icons/fa";
+import { IoAlertCircle, IoDownload } from "react-icons/io5";
 
 export function Hero() {
   const { t } = useLanguage();
@@ -23,11 +23,12 @@ export function Hero() {
             height={40}
             className="rounded-lg"
           />
-          <span className="text-xl font-bold">{t.hero.title}</span>
+          <span className="text-xl font-bold text-[#3674B5]">
+            {t.hero.title}
+          </span>
         </div>
         <div className="flex items-center gap-2">
           <LanguageToggle />
-          <ThemeToggle />
         </div>
       </header>
 
@@ -40,39 +41,41 @@ export function Hero() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
       </div>
 
       {/* Hero Content */}
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-16 -mt-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-gradient-to-r from-[#3674B5] to-[#578FCA] bg-clip-text text-transparent">
               {t.hero.title}
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-medium">
+            <p className="text-xl md:text-2xl text-[#578FCA] font-medium">
               {t.hero.tagline}
             </p>
-            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-[#3674B5]/70 max-w-2xl mx-auto">
               {t.hero.description}
             </p>
           </div>
 
           {/* GitHub Badges */}
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <Badge variant="secondary" className="gap-2 px-3 py-1.5">
-              <Star className="h-3.5 w-3.5 fill-yellow-500 text-yellow-500" />
+            <Badge className="gap-2 px-3 py-1.5 bg-[#D1F8EF] text-[#3674B5] border-[#A1E3F9]">
+              <FaStar className="h-3.5 w-3.5 fill-yellow-500 text-yellow-500" />
               <span>Stars</span>
             </Badge>
-            <Badge variant="secondary" className="gap-2 px-3 py-1.5">
-              <GitFork className="h-3.5 w-3.5" />
+            <Badge className="gap-2 px-3 py-1.5 bg-[#D1F8EF] text-[#3674B5] border-[#A1E3F9]">
+              <FaCodeBranch className="h-3.5 w-3.5" />
               <span>Forks</span>
             </Badge>
-            <Badge variant="secondary" className="gap-2 px-3 py-1.5">
-              <AlertCircle className="h-3.5 w-3.5" />
+            <Badge className="gap-2 px-3 py-1.5 bg-[#D1F8EF] text-[#3674B5] border-[#A1E3F9]">
+              <IoAlertCircle className="h-3.5 w-3.5" />
               <span>Issues</span>
             </Badge>
-            <Badge variant="outline" className="px-3 py-1.5">
+            <Badge
+              variant="outline"
+              className="px-3 py-1.5 border-[#578FCA] text-[#578FCA]">
               <span>MIT License</span>
             </Badge>
           </div>
@@ -81,29 +84,20 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               size="lg"
-              className="gap-2 text-base px-8 h-12 shadow-lg hover:shadow-xl transition-all">
-              <svg
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
+              className="gap-2 text-base px-8 h-12 shadow-lg hover:shadow-xl transition-all bg-gradient-to-r from-[#3674B5] to-[#578FCA] hover:from-[#578FCA] hover:to-[#3674B5] text-white">
+              <IoDownload className="h-5 w-5" />
               {t.hero.downloadButton}
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="gap-2 text-base px-8 h-12"
+              className="gap-2 text-base px-8 h-12 border-[#578FCA] text-[#3674B5] hover:bg-[#D1F8EF]"
               asChild>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer">
-                <Github className="h-5 w-5" />
+                <FaGithub className="h-5 w-5" />
                 {t.hero.githubButton}
               </a>
             </Button>

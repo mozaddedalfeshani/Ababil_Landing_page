@@ -10,68 +10,73 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Download, Apple, Monitor } from "lucide-react";
+import { IoDownload } from "react-icons/io5";
+import { FaApple, FaWindows } from "react-icons/fa";
 
 export function DownloadSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 px-6 bg-muted/30">
+    <section className="py-24 px-6 bg-gradient-to-b from-[#D1F8EF]/30 to-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center space-y-4 mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-[#3674B5] to-[#578FCA] bg-clip-text text-transparent">
             {t.download.title}
           </h2>
-          <p className="text-xl text-muted-foreground">{t.download.subtitle}</p>
+          <p className="text-xl text-[#578FCA]">{t.download.subtitle}</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* macOS Download */}
-          <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+          <Card className="border-2 border-[#A1E3F9] hover:border-[#578FCA] transition-all hover:shadow-lg bg-white">
             <CardHeader className="text-center">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mx-auto mb-4">
-                <Apple className="h-8 w-8 text-white" />
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#3674B5] to-[#578FCA] flex items-center justify-center mx-auto mb-4">
+                <FaApple className="h-8 w-8 text-white" />
               </div>
-              <CardTitle className="text-2xl">macOS</CardTitle>
-              <CardDescription>{t.download.version} 1.0.0</CardDescription>
+              <CardTitle className="text-2xl text-[#3674B5]">macOS</CardTitle>
+              <CardDescription className="text-[#578FCA]">
+                {t.download.version} 1.0.0
+              </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-              <Button size="lg" className="w-full gap-2" asChild>
+              <Button
+                size="lg"
+                className="w-full gap-2 bg-gradient-to-r from-[#3674B5] to-[#578FCA] hover:from-[#578FCA] hover:to-[#3674B5] text-white"
+                asChild>
                 <a
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <Download className="h-5 w-5" />
+                  <IoDownload className="h-5 w-5" />
                   {t.download.macButton}
                 </a>
               </Button>
-              <p className="text-sm text-muted-foreground mt-4">
-                macOS 11.0 or later
-              </p>
+              <p className="text-sm text-[#578FCA] mt-4">macOS 11.0 or later</p>
             </CardContent>
           </Card>
 
           {/* Windows Coming Soon */}
-          <Card className="border-2 opacity-75">
+          <Card className="border-2 border-[#A1E3F9] opacity-75 bg-white">
             <CardHeader className="text-center">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mx-auto mb-4">
-                <Monitor className="h-8 w-8 text-white" />
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#A1E3F9] to-[#D1F8EF] flex items-center justify-center mx-auto mb-4">
+                <FaWindows className="h-8 w-8 text-[#3674B5]" />
               </div>
-              <CardTitle className="text-2xl">Windows</CardTitle>
+              <CardTitle className="text-2xl text-[#3674B5]">Windows</CardTitle>
               <CardDescription>
-                <Badge variant="secondary" className="mt-2">
+                <Badge className="mt-2 bg-[#D1F8EF] text-[#3674B5] border-[#A1E3F9]">
                   {t.download.windowsComingSoon}
                 </Badge>
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-              <Button size="lg" className="w-full" disabled>
-                <Download className="h-5 w-5 mr-2" />
+              <Button
+                size="lg"
+                className="w-full bg-[#A1E3F9] text-[#3674B5] hover:bg-[#D1F8EF]"
+                disabled>
+                <IoDownload className="h-5 w-5 mr-2" />
                 {t.download.windowsComingSoon}
               </Button>
-              <p className="text-sm text-muted-foreground mt-4">
-                Windows 10 or later
-              </p>
+              <p className="text-sm text-[#578FCA] mt-4">Windows 10 or later</p>
             </CardContent>
           </Card>
         </div>

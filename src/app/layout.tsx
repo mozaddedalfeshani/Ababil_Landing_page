@@ -11,24 +11,27 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ababil.studio"),
+  metadataBase: new URL("https://ababilx.imurad.me"),
   title: {
-    default: "Ababil Studio - Modern API Development Companion",
+    default:
+      "Ababil Studio - Free Open Source Postman Alternative | Rust-Powered API Testing",
     template: "%s | Ababil Studio",
   },
   description:
-    "A blazing-fast, open-source API development and testing platform. Rust-powered core, lightweight, and privacy-first alternative to Postman.",
+    "Free, open-source Postman alternative built with Rust. Blazing-fast API testing, lightweight, privacy-first. No account required. Download now!",
   keywords: [
-    "API testing",
-    "API development",
     "Postman alternative",
-    "REST API",
-    "HTTP client",
-    "open source",
-    "Rust",
+    "free Postman alternative",
+    "open source API testing",
+    "Rust API client",
+    "free API testing tool",
+    "lightweight HTTP client",
+    "REST API testing",
+    "privacy-first API tool",
     "developer tools",
-    "productivity",
     "Ababil Studio",
+    "open source",
+    "free software",
   ],
   authors: [{ name: "Ababil Studio Team" }],
   creator: "Ababil Studio",
@@ -50,17 +53,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ababil.studio",
+    url: "https://ababilx.imurad.me",
     siteName: "Ababil Studio",
-    title: "Ababil Studio - Modern API Development Companion",
+    title: "Ababil Studio - Free Open Source Postman Alternative",
     description:
-      "A blazing-fast, open-source API development and testing platform. Rust-powered core, lightweight, and privacy-first alternative to Postman.",
+      "Free, open-source Postman alternative built with Rust. Blazing-fast, lightweight, privacy-first API testing. No account required!",
     images: [
       {
         url: "/banner.png",
         width: 1200,
         height: 630,
-        alt: "Ababil Studio - Modern API Development Companion",
+        alt: "Ababil Studio - Free Open Source Postman Alternative",
       },
     ],
   },
@@ -68,11 +71,10 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Ababil Studio - Modern API Development Companion",
+    title: "Ababil Studio - Free Postman Alternative | Rust-Powered",
     description:
-      "A blazing-fast, open-source API development and testing platform. Rust-powered, lightweight, and privacy-first.",
+      "Free, open-source Postman alternative. Rust-powered, blazing-fast, lightweight, privacy-first. No account required!",
     images: ["/banner.png"],
-    creator: "@AbabilStudio",
   },
 
   // Robots
@@ -87,11 +89,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
-  // Verification (add your codes when available)
-  // verification: {
-  //   google: "your-google-verification-code",
-  // },
 };
 
 export default function RootLayout({
@@ -102,7 +99,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://ababil.studio" />
+        <link rel="canonical" href="https://ababilx.imurad.me" />
         <meta name="theme-color" content="#3674B5" />
       </head>
       <body className={`${poppins.variable} antialiased`}>

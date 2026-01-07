@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FaGithub, FaStar } from "react-icons/fa";
@@ -48,9 +47,9 @@ export function GitHubLinks() {
 
         {/* Quick Links */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Card className="hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer group border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+          <Card className="border-[#A1E3F9] bg-white">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#3674B5]/10 flex items-center justify-center mx-auto mb-3 group-hover:bg-[#3674B5]/20 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#3674B5]/10 flex items-center justify-center mx-auto mb-3">
                 <FaGithub className="h-6 w-6 text-[#3674B5]" />
               </div>
               <CardTitle className="text-lg text-[#3674B5]">
@@ -58,21 +57,20 @@ export function GitHubLinks() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
-              <Button
-                variant="outline"
-                className="w-full border-[#578FCA] text-[#3674B5] hover:bg-[#D1F8EF]"
-                asChild>
-                <a href={repoUrl} target="_blank" rel="noopener noreferrer">
-                  <FaGithub className="h-4 w-4 mr-2" />
-                  Repository
-                </a>
-              </Button>
+              <a
+                href={repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
+                <FaGithub className="h-4 w-4 mr-2" />
+                Repository
+              </a>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer group border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+          <Card className="border-[#A1E3F9] bg-white">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#578FCA]/10 flex items-center justify-center mx-auto mb-3 group-hover:bg-[#578FCA]/20 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#578FCA]/10 flex items-center justify-center mx-auto mb-3">
                 <GoPackage className="h-6 w-6 text-[#578FCA]" />
               </div>
               <CardTitle className="text-lg text-[#3674B5]">
@@ -80,24 +78,20 @@ export function GitHubLinks() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
-              <Button
-                variant="outline"
-                className="w-full border-[#578FCA] text-[#3674B5] hover:bg-[#D1F8EF]"
-                asChild>
-                <a
-                  href={`${repoUrl}/releases`}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <GoPackage className="h-4 w-4 mr-2" />
-                  Releases
-                </a>
-              </Button>
+              <a
+                href={`${repoUrl}/releases`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
+                <GoPackage className="h-4 w-4 mr-2" />
+                Releases
+              </a>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer group border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+          <Card className="border-[#A1E3F9] bg-white">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#A1E3F9]/30 flex items-center justify-center mx-auto mb-3 group-hover:bg-[#A1E3F9]/50 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#A1E3F9]/30 flex items-center justify-center mx-auto mb-3">
                 <IoAlertCircle className="h-6 w-6 text-[#3674B5]" />
               </div>
               <CardTitle className="text-lg text-[#3674B5]">
@@ -105,24 +99,20 @@ export function GitHubLinks() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
-              <Button
-                variant="outline"
-                className="w-full border-[#578FCA] text-[#3674B5] hover:bg-[#D1F8EF]"
-                asChild>
-                <a
-                  href={`${repoUrl}/issues`}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <IoAlertCircle className="h-4 w-4 mr-2" />
-                  Issues
-                </a>
-              </Button>
+              <a
+                href={`${repoUrl}/issues`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
+                <IoAlertCircle className="h-4 w-4 mr-2" />
+                Issues
+              </a>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer group border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+          <Card className="border-[#A1E3F9] bg-white">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#D1F8EF] flex items-center justify-center mx-auto mb-3 group-hover:bg-[#A1E3F9] transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#D1F8EF] flex items-center justify-center mx-auto mb-3">
                 <IoChatbubbles className="h-6 w-6 text-[#578FCA]" />
               </div>
               <CardTitle className="text-lg text-[#3674B5]">
@@ -130,18 +120,14 @@ export function GitHubLinks() {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
-              <Button
-                variant="outline"
-                className="w-full border-[#578FCA] text-[#3674B5] hover:bg-[#D1F8EF]"
-                asChild>
-                <a
-                  href={`${repoUrl}/discussions`}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <IoChatbubbles className="h-4 w-4 mr-2" />
-                  Discussions
-                </a>
-              </Button>
+              <a
+                href={`${repoUrl}/discussions`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
+                <IoChatbubbles className="h-4 w-4 mr-2" />
+                Discussions
+              </a>
             </CardContent>
           </Card>
         </div>
@@ -151,15 +137,14 @@ export function GitHubLinks() {
           <p className="text-lg text-[#578FCA] mb-6">
             {t.footer.madeWith} ❤️ · {t.footer.openSource}
           </p>
-          <Button
-            size="lg"
-            className="gap-2 bg-gradient-to-r from-[#3674B5] to-[#578FCA] hover:from-[#578FCA] hover:to-[#3674B5] text-white"
-            asChild>
-            <a href={repoUrl} target="_blank" rel="noopener noreferrer">
-              <FaStar className="h-5 w-5" />
-              Star on GitHub
-            </a>
-          </Button>
+          <a
+            href={repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-md bg-gradient-to-r from-[#3674B5] to-[#578FCA] text-white font-medium text-lg shadow-lg">
+            <FaStar className="h-5 w-5" />
+            Star on GitHub
+          </a>
         </div>
       </div>
     </section>

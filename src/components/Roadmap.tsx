@@ -53,7 +53,7 @@ export function Roadmap() {
           {roadmapItems.map((item, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 p-4 rounded-xl bg-[#D1F8EF]/30 border border-[#A1E3F9] hover:border-[#578FCA] hover:bg-[#D1F8EF]/50 transition-all duration-300">
+              className="flex items-center gap-3 p-4 rounded-xl bg-[#D1F8EF]/30 border border-[#A1E3F9]">
               {item.done ? (
                 <IoCheckmarkCircle className="h-6 w-6 text-[#3674B5] flex-shrink-0" />
               ) : (

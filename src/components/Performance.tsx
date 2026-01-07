@@ -67,7 +67,7 @@ export function Performance() {
             return (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20">
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
                 <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
                   <Icon className="h-8 w-8 text-white" />
                 </div>

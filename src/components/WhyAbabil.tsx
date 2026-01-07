@@ -72,7 +72,7 @@ export function WhyAbabil() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-4 mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-[#3674B5] to-[#578FCA] bg-clip-text text-transparent">
-            {isEn ? "Why Ababil?" : "কেন আবাবিল?"}
+            {isEn ? "Why Ababil Studio?" : "কেন আবাবিল স্টুডিয়ো ?"}
           </h2>
           <p className="text-xl text-[#578FCA] max-w-2xl mx-auto">
             {isEn
@@ -85,12 +85,10 @@ export function WhyAbabil() {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <Card
-                key={index}
-                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+              <Card key={index} className="border-2 border-[#A1E3F9] bg-white">
                 <CardContent className="p-6">
                   <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4"
                     style={{ backgroundColor: `${benefit.color}15` }}>
                     <Icon
                       className="h-7 w-7"

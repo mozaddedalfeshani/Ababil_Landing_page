@@ -87,7 +87,7 @@ export function Comparison() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center space-y-4 mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-[#3674B5] to-[#578FCA] bg-clip-text text-transparent">
-            {isEn ? "Ababil vs Postman" : "আবাবিল বনাম পোস্টম্যান"}
+            {isEn ? "Ababil Studio vs Postman" : "আবাবিল বনাম পোস্টম্যান"}
           </h2>
           <p className="text-xl text-[#578FCA] max-w-2xl mx-auto">
             {isEn
@@ -116,7 +116,7 @@ export function Comparison() {
               key={index}
               className={`grid grid-cols-3 ${
                 index % 2 === 0 ? "bg-[#D1F8EF]/20" : "bg-white"
-              } hover:bg-[#D1F8EF]/40 transition-colors`}>
+              }`}>
               <div className="p-4 text-[#3674B5] font-medium">
                 {isEn ? item.featureEn : item.featureBn}
               </div>

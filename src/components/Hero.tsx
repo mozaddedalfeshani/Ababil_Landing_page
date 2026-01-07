@@ -84,14 +84,14 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               size="lg"
-              className="gap-2 text-base px-8 h-12 shadow-lg hover:shadow-xl transition-all bg-gradient-to-r from-[#3674B5] to-[#578FCA] hover:from-[#578FCA] hover:to-[#3674B5] text-white">
+              className="gap-2 text-base px-8 h-12 shadow-lg bg-gradient-to-r from-[#3674B5] to-[#578FCA] text-white">
               <IoDownload className="h-5 w-5" />
               {t.hero.downloadButton}
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="gap-2 text-base px-8 h-12 border-[#578FCA] text-[#3674B5] hover:bg-[#D1F8EF]"
+              className="gap-2 text-base px-8 h-12 border-[#578FCA] text-[#3674B5] bg-white"
               asChild>
               <a
                 href="https://github.com"

@@ -52,12 +52,10 @@ export function Features() {
             const Icon = iconMap[index as keyof typeof iconMap];
             const iconColor = iconColors[index];
             return (
-              <Card
-                key={index}
-                className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+              <Card key={index} className="border-2 border-[#A1E3F9] bg-white">
                 <CardHeader>
                   <div
-                    className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors"
+                    className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
                     style={{ backgroundColor: `${iconColor}15` }}>
                     <Icon className="h-6 w-6" style={{ color: iconColor }} />
                   </div>

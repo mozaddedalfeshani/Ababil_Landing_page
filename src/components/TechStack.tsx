@@ -51,12 +51,10 @@ export function TechStack() {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {techStack.core.map((tech) => (
-                <Card
-                  key={tech.name}
-                  className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+                <Card key={tech.name} className="border-[#A1E3F9] bg-white">
                   <CardContent className="flex flex-col items-center justify-center p-6 space-y-3">
                     <tech.icon
-                      className="h-12 w-12 transition-transform group-hover:scale-110"
+                      className="h-12 w-12"
                       style={{ color: tech.color }}
                     />
                     <span className="font-medium text-sm text-[#3674B5]">
@@ -75,12 +73,10 @@ export function TechStack() {
             </h3>
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
               {techStack.ui.map((tech) => (
-                <Card
-                  key={tech.name}
-                  className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+                <Card key={tech.name} className="border-[#A1E3F9] bg-white">
                   <CardContent className="flex flex-col items-center justify-center p-6 space-y-3">
                     <tech.icon
-                      className="h-12 w-12 transition-transform group-hover:scale-110"
+                      className="h-12 w-12"
                       style={{ color: tech.color }}
                     />
                     <span className="font-medium text-sm text-[#3674B5]">
@@ -99,12 +95,10 @@ export function TechStack() {
             </h3>
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
               {techStack.devTools.map((tech) => (
-                <Card
-                  key={tech.name}
-                  className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer border-[#A1E3F9] hover:border-[#578FCA] bg-white">
+                <Card key={tech.name} className="border-[#A1E3F9] bg-white">
                   <CardContent className="flex flex-col items-center justify-center p-6 space-y-3">
                     <tech.icon
-                      className="h-12 w-12 transition-transform group-hover:scale-110"
+                      className="h-12 w-12"
                       style={{ color: tech.color }}
                     />
                     <span className="font-medium text-sm text-[#3674B5]">

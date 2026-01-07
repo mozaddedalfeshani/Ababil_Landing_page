@@ -28,7 +28,7 @@ export function DownloadSection() {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* macOS Download */}
-          <Card className="border-2 border-[#A1E3F9] hover:border-[#578FCA] transition-all hover:shadow-lg bg-white">
+          <Card className="border-2 border-[#A1E3F9] bg-white">
             <CardHeader className="text-center">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#3674B5] to-[#578FCA] flex items-center justify-center mx-auto mb-4">
                 <FaApple className="h-8 w-8 text-white" />
@@ -41,7 +41,7 @@ export function DownloadSection() {
             <CardContent className="text-center">
               <Button
                 size="lg"
-                className="w-full gap-2 bg-gradient-to-r from-[#3674B5] to-[#578FCA] hover:from-[#578FCA] hover:to-[#3674B5] text-white"
+                className="w-full gap-2 bg-gradient-to-r from-[#3674B5] to-[#578FCA] text-white"
                 asChild>
                 <a
                   href="https://github.com"
@@ -71,7 +71,7 @@ export function DownloadSection() {
             <CardContent className="text-center">
               <Button
                 size="lg"
-                className="w-full bg-[#A1E3F9] text-[#3674B5] hover:bg-[#D1F8EF]"
+                className="w-full bg-[#A1E3F9] text-[#3674B5]"
                 disabled>
                 <IoDownload className="h-5 w-5 mr-2" />
                 {t.download.windowsComingSoon}

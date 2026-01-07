@@ -49,7 +49,7 @@ export function WhatsNew() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 p-3 rounded-lg bg-[#D1F8EF]/50 hover:bg-[#D1F8EF] transition-colors">
+                className="flex items-center gap-3 p-3 rounded-lg bg-[#D1F8EF]/50">
                 <div className="w-6 h-6 rounded-full bg-[#3674B5] flex items-center justify-center flex-shrink-0">
                   <IoCheckmark className="h-4 w-4 text-white" />
                 </div>

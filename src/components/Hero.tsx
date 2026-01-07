@@ -94,7 +94,7 @@ export function Hero() {
               className="gap-2 text-base px-8 h-12 border-[#578FCA] text-[#3674B5] bg-white"
               asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/AbabilX/Ababil-Studio"
                 target="_blank"
                 rel="noopener noreferrer">
                 <FaGithub className="h-5 w-5" />

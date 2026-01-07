@@ -1,7 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { WhyAbabil } from "@/components/WhyAbabil";
 import { Comparison } from "@/components/Comparison";
-import { Features } from "@/components/Features";
 import { Performance } from "@/components/Performance";
 import { DownloadSection } from "@/components/Download";
 import { TechStack } from "@/components/TechStack";
@@ -15,7 +14,6 @@ export default function Home() {
       <Hero />
       <WhyAbabil />
       <Comparison />
-      <Features />
       <Performance />
       <DownloadSection />
       <TechStack />

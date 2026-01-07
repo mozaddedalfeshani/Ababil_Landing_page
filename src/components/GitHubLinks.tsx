@@ -9,8 +9,7 @@ import { GoPackage } from "react-icons/go";
 export function GitHubLinks() {
   const { t } = useLanguage();
 
-  // Replace with actual GitHub repo URL
-  const repoUrl = "https://github.com/username/ababil-studio";
+  const repoUrl = "https://github.com/AbabilX/Ababil-Studio";
 
   return (
     <section className="py-24 px-6 bg-[#D1F8EF]/50">
@@ -24,22 +23,22 @@ export function GitHubLinks() {
         {/* GitHub Badges */}
         <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
           <img
-            src={`https://img.shields.io/github/stars/username/ababil-studio?style=for-the-badge&logo=github`}
+            src={`https://img.shields.io/github/stars/AbabilX/Ababil-Studio?style=for-the-badge&logo=github`}
             alt="GitHub stars"
             className="h-7"
           />
           <img
-            src={`https://img.shields.io/github/forks/username/ababil-studio?style=for-the-badge&logo=github`}
+            src={`https://img.shields.io/github/forks/AbabilX/Ababil-Studio?style=for-the-badge&logo=github`}
             alt="GitHub forks"
             className="h-7"
           />
           <img
-            src={`https://img.shields.io/github/issues/username/ababil-studio?style=for-the-badge&logo=github`}
+            src={`https://img.shields.io/github/issues/AbabilX/Ababil-Studio?style=for-the-badge&logo=github`}
             alt="GitHub issues"
             className="h-7"
           />
           <img
-            src={`https://img.shields.io/github/license/username/ababil-studio?style=for-the-badge`}
+            src={`https://img.shields.io/github/license/AbabilX/Ababil-Studio?style=for-the-badge`}
             alt="License"
             className="h-7"
           />

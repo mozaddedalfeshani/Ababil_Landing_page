@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { WhyAbabil } from "@/components/WhyAbabil";
+import { Comparison } from "@/components/Comparison";
 import { Features } from "@/components/Features";
 import { Performance } from "@/components/Performance";
 import { DownloadSection } from "@/components/Download";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <WhyAbabil />
+      <Comparison />
       <Features />
       <Performance />
       <DownloadSection />

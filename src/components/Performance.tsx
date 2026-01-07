@@ -34,12 +34,12 @@ const performanceStats = [
   },
   {
     icon: IoHardwareChip,
-    valueEn: "50MB",
-    valueBn: "৫০MB",
+    valueEn: "Low",
+    valueBn: "কম",
     labelEn: "Memory",
     labelBn: "মেমরি",
-    descEn: "Efficient resource management",
-    descBn: "দক্ষ রিসোর্স ম্যানেজমেন্ট",
+    descEn: "Uses less RAM than alternatives",
+    descBn: "বিকল্পগুলির চেয়ে কম RAM ব্যবহার করে",
   },
 ];
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { SplashScreen } from "@/components/SplashScreen";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -103,7 +104,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#3674B5" />
       </head>
       <body className={`${poppins.variable} antialiased`}>
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <SplashScreen>{children}</SplashScreen>
+        </LanguageProvider>
       </body>
     </html>
   );

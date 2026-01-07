@@ -17,7 +17,7 @@ export function Hero() {
       <header className="absolute top-0 left-0 right-0 z-10 flex justify-between items-center p-6">
         <div className="flex items-center gap-3">
           <Image
-            src="/icon.png"
+            src="/iconwithoutbg.png"
             alt="Ababil Studio Logo"
             width={40}
             height={40}

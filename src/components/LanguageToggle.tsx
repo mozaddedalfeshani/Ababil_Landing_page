@@ -17,7 +17,7 @@ export function LanguageToggle() {
       variant="ghost"
       size="sm"
       onClick={toggleLanguage}
-      className="gap-2 transition-transform hover:scale-105 text-[#3674B5] hover:bg-[#D1F8EF]">
+      className="gap-2 transition-transform hover:scale-105 text-[#3674B5]">
       <IoLanguage className="h-4 w-4" />
       <span className="font-semibold">{language === "en" ? "বাং" : "EN"}</span>
     </Button>

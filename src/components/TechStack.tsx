@@ -3,30 +3,54 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { VscCode } from "react-icons/vsc";
+import { SiRust } from "react-icons/si";
 import {
   SiTypescript,
   SiReact,
-  SiNextdotjs,
   SiTailwindcss,
-  SiNodedotjs,
-  SiGit,
   SiElectron,
 } from "react-icons/si";
 
 const techStack = {
   core: [
-    { name: "TypeScript", icon: SiTypescript, color: "#3674B5" },
-    { name: "React", icon: SiReact, color: "#578FCA" },
-    { name: "Next.js", icon: SiNextdotjs, color: "#3674B5" },
-    { name: "Node.js", icon: SiNodedotjs, color: "#578FCA" },
+    {
+      name: "Rust",
+      icon: SiRust,
+      color: "#DEA584",
+      desc: "High-Performance Core",
+    },
+    {
+      name: "TypeScript",
+      icon: SiTypescript,
+      color: "#3674B5",
+      desc: "Type-Safe Frontend",
+    },
+    {
+      name: "React 19",
+      icon: SiReact,
+      color: "#578FCA",
+      desc: "Modern UI Library",
+    },
+    {
+      name: "Electron",
+      icon: SiElectron,
+      color: "#3674B5",
+      desc: "Cross-Platform Desktop",
+    },
   ],
   ui: [
-    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#3674B5" },
-    { name: "Electron", icon: SiElectron, color: "#578FCA" },
-  ],
-  devTools: [
-    { name: "Git", icon: SiGit, color: "#3674B5" },
-    { name: "VS Code", icon: VscCode, color: "#578FCA" },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss,
+      color: "#578FCA",
+      desc: "Utility-First Styling",
+    },
+    {
+      name: "shadcn/ui",
+      icon: VscCode,
+      color: "#3674B5",
+      desc: "Accessible Components",
+    },
   ],
 };
 
@@ -49,17 +73,18 @@ export function TechStack() {
             <h3 className="text-2xl font-semibold mb-6 text-center text-[#3674B5]">
               {t.techStack.categories.core}
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {techStack.core.map((tech) => (
                 <Card key={tech.name} className="border-[#A1E3F9] bg-white">
                   <CardContent className="flex flex-col items-center justify-center p-6 space-y-3">
                     <tech.icon
-                      className="h-12 w-12"
+                      className="h-14 w-14"
                       style={{ color: tech.color }}
                     />
-                    <span className="font-medium text-sm text-[#3674B5]">
+                    <span className="font-semibold text-lg text-[#3674B5]">
                       {tech.name}
                     </span>
+                    <span className="text-sm text-[#578FCA]">{tech.desc}</span>
                   </CardContent>
                 </Card>
               ))}
@@ -71,39 +96,18 @@ export function TechStack() {
             <h3 className="text-2xl font-semibold mb-6 text-center text-[#3674B5]">
               {t.techStack.categories.ui}
             </h3>
-            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
               {techStack.ui.map((tech) => (
                 <Card key={tech.name} className="border-[#A1E3F9] bg-white">
                   <CardContent className="flex flex-col items-center justify-center p-6 space-y-3">
                     <tech.icon
-                      className="h-12 w-12"
+                      className="h-14 w-14"
                       style={{ color: tech.color }}
                     />
-                    <span className="font-medium text-sm text-[#3674B5]">
+                    <span className="font-semibold text-lg text-[#3674B5]">
                       {tech.name}
                     </span>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Development Tools */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-6 text-center text-[#3674B5]">
-              {t.techStack.categories.devTools}
-            </h3>
-            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-              {techStack.devTools.map((tech) => (
-                <Card key={tech.name} className="border-[#A1E3F9] bg-white">
-                  <CardContent className="flex flex-col items-center justify-center p-6 space-y-3">
-                    <tech.icon
-                      className="h-12 w-12"
-                      style={{ color: tech.color }}
-                    />
-                    <span className="font-medium text-sm text-[#3674B5]">
-                      {tech.name}
-                    </span>
+                    <span className="text-sm text-[#578FCA]">{tech.desc}</span>
                   </CardContent>
                 </Card>
               ))}

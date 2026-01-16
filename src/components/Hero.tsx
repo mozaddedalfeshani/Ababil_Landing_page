@@ -6,8 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageToggle } from "./LanguageToggle";
-import { FaGithub } from "react-icons/fa";
-import { IoCodeSlash, IoShieldCheckmark, IoRocket } from "react-icons/io5";
+import {
+  Github01Icon,
+  SourceCodeIcon,
+  ShieldKeyIcon,
+  RocketIcon,
+} from "hugeicons-react";
 
 export function Hero() {
   const { t } = useLanguage();
@@ -82,15 +86,15 @@ export function Hero() {
           {/* Organization Badges */}
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Badge className="gap-2 px-3 py-1.5 bg-[#21262d] text-[#58a6ff] border-[#30363d]">
-              <IoCodeSlash className="h-3.5 w-3.5" />
+              <SourceCodeIcon size={14} />
               <span>Open Source</span>
             </Badge>
             <Badge className="gap-2 px-3 py-1.5 bg-[#21262d] text-[#58a6ff] border-[#30363d]">
-              <IoShieldCheckmark className="h-3.5 w-3.5" />
+              <ShieldKeyIcon size={14} />
               <span>MIT License</span>
             </Badge>
             <Badge className="gap-2 px-3 py-1.5 bg-[#21262d] text-[#58a6ff] border-[#30363d]">
-              <IoRocket className="h-3.5 w-3.5" />
+              <RocketIcon size={14} />
               <span>Community Driven</span>
             </Badge>
           </div>
@@ -102,7 +106,7 @@ export function Hero() {
               className="gap-2 text-base px-8 h-12 shadow-lg bg-gradient-to-r from-[#1f6feb] to-[#58a6ff] text-white hover:opacity-90"
               asChild>
               <Link href="/projects">
-                <IoRocket className="h-5 w-5" />
+                <RocketIcon size={20} />
                 {t.hero.downloadButton}
               </Link>
             </Button>
@@ -115,7 +119,7 @@ export function Hero() {
                 href="https://github.com/AbabilX"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FaGithub className="h-5 w-5" />
+                <Github01Icon size={20} />
                 {t.hero.githubButton}
               </a>
             </Button>

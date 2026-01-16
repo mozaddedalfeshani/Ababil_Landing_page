@@ -3,17 +3,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import {
-  IoRocket,
-  IoCodeSlash,
-  IoHeart,
-  IoCheckmarkCircle,
-  IoPeople,
-  IoShieldCheckmark,
-} from "react-icons/io5";
+  RocketIcon,
+  SourceCodeIcon,
+  FavouriteIcon,
+  CheckmarkCircle02Icon,
+  UserGroupIcon,
+  ShieldKeyIcon,
+} from "hugeicons-react";
 
 const values = [
   {
-    icon: IoRocket,
+    icon: RocketIcon,
     titleEn: "Practical Software",
     titleBn: "ব্যবহারিক সফটওয়্যার",
     descEn: "Build genuinely useful tools that solve real problems",
@@ -21,7 +21,7 @@ const values = [
     color: "#58a6ff",
   },
   {
-    icon: IoCodeSlash,
+    icon: SourceCodeIcon,
     titleEn: "Open Collaboration",
     titleBn: "উন্নয়ন স্বচ্ছতা",
     descEn: "Transparent development with community involvement",
@@ -29,7 +29,7 @@ const values = [
     color: "#79c0ff",
   },
   {
-    icon: IoHeart,
+    icon: FavouriteIcon,
     titleEn: "Developer Support",
     titleBn: "ডেভেলপার সাপোর্ট",
     descEn: "Tools for learning, productivity, and growth",
@@ -37,7 +37,7 @@ const values = [
     color: "#58a6ff",
   },
   {
-    icon: IoCheckmarkCircle,
+    icon: CheckmarkCircle02Icon,
     titleEn: "Quality First",
     titleBn: "গুণমান প্রথম",
     descEn: "Clean implementation with best practices",
@@ -45,7 +45,7 @@ const values = [
     color: "#79c0ff",
   },
   {
-    icon: IoShieldCheckmark,
+    icon: ShieldKeyIcon,
     titleEn: "Free & Open",
     titleBn: "ফ্রি ও ওপেন",
     descEn: "Accessible to everyone under MIT license",
@@ -53,7 +53,7 @@ const values = [
     color: "#58a6ff",
   },
   {
-    icon: IoPeople,
+    icon: UserGroupIcon,
     titleEn: "Community Driven",
     titleBn: "কমিউনিটি চালিত",
     descEn: "Respectful collaboration and open discussions",
@@ -91,7 +91,7 @@ export function WhyAbabil() {
                   <div
                     className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4"
                     style={{ backgroundColor: `${value.color}15` }}>
-                    <Icon className="h-7 w-7" style={{ color: value.color }} />
+                    <Icon size={28} style={{ color: value.color }} />
                   </div>
                   <h3 className="text-xl font-semibold text-[#c9d1d9] mb-2">
                     {isEn ? value.titleEn : value.titleBn}

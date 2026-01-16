@@ -2,9 +2,13 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { FaGithub } from "react-icons/fa";
-import { IoCodeSlash, IoPeople, IoChatbubbles } from "react-icons/io5";
-import { GoPackage } from "react-icons/go";
+import {
+  Github01Icon,
+  SourceCodeIcon,
+  UserGroupIcon,
+  Comment01Icon,
+  PackageIcon,
+} from "hugeicons-react";
 
 export function GitHubLinks() {
   const { t } = useLanguage();
@@ -28,7 +32,7 @@ export function GitHubLinks() {
           <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
               <div className="w-12 h-12 rounded-full bg-[#58a6ff]/10 flex items-center justify-center mx-auto mb-3">
-                <FaGithub className="h-6 w-6 text-[#58a6ff]" />
+                <Github01Icon size={24} className="text-[#58a6ff]" />
               </div>
               <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.viewRepo}
@@ -40,7 +44,7 @@ export function GitHubLinks() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
-                <FaGithub className="h-4 w-4 mr-2" />
+                <Github01Icon size={16} className="mr-2" />
                 AbabilX
               </a>
             </CardContent>
@@ -49,7 +53,7 @@ export function GitHubLinks() {
           <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
               <div className="w-12 h-12 rounded-full bg-[#79c0ff]/10 flex items-center justify-center mx-auto mb-3">
-                <GoPackage className="h-6 w-6 text-[#79c0ff]" />
+                <PackageIcon size={24} className="text-[#79c0ff]" />
               </div>
               <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.releases}
@@ -61,7 +65,7 @@ export function GitHubLinks() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
-                <GoPackage className="h-4 w-4 mr-2" />
+                <PackageIcon size={16} className="mr-2" />
                 Repositories
               </a>
             </CardContent>
@@ -70,7 +74,7 @@ export function GitHubLinks() {
           <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
               <div className="w-12 h-12 rounded-full bg-[#58a6ff]/10 flex items-center justify-center mx-auto mb-3">
-                <IoCodeSlash className="h-6 w-6 text-[#58a6ff]" />
+                <SourceCodeIcon size={24} className="text-[#58a6ff]" />
               </div>
               <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.issues}
@@ -82,7 +86,7 @@ export function GitHubLinks() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
-                <IoPeople className="h-4 w-4 mr-2" />
+                <UserGroupIcon size={16} className="mr-2" />
                 Contribute
               </a>
             </CardContent>
@@ -91,7 +95,7 @@ export function GitHubLinks() {
           <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
               <div className="w-12 h-12 rounded-full bg-[#79c0ff]/10 flex items-center justify-center mx-auto mb-3">
-                <IoChatbubbles className="h-6 w-6 text-[#79c0ff]" />
+                <Comment01Icon size={24} className="text-[#79c0ff]" />
               </div>
               <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.discussions}
@@ -103,7 +107,7 @@ export function GitHubLinks() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
-                <IoChatbubbles className="h-4 w-4 mr-2" />
+                <Comment01Icon size={16} className="mr-2" />
                 Discussions
               </a>
             </CardContent>
@@ -120,7 +124,7 @@ export function GitHubLinks() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-md bg-gradient-to-r from-[#1f6feb] to-[#58a6ff] text-white font-medium text-lg shadow-lg hover:opacity-90 transition-opacity">
-            <FaGithub className="h-5 w-5" />
+            <Github01Icon size={20} />
             Follow on GitHub
           </a>
         </div>

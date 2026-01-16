@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { FaGithub, FaStar, FaCodeBranch } from "react-icons/fa";
+import { Github01Icon, StarIcon, GitForkIcon } from "hugeicons-react";
 
 interface ProjectCardProps {
   name: string;
@@ -27,7 +27,7 @@ export function ProjectCard({
         {/* Header */}
         <div className="flex items-start justify-between mb-3">
           <div className="flex items-center gap-2">
-            <FaGithub className="h-5 w-5 text-[#8b949e]" />
+            <Github01Icon size={20} className="text-[#8b949e]" />
             <a
               href={repoUrl}
               target="_blank"
@@ -72,11 +72,11 @@ export function ProjectCard({
             <span>{language}</span>
           </div>
           <div className="flex items-center gap-1">
-            <FaStar className="h-3.5 w-3.5" />
+            <StarIcon size={14} />
             <span>0</span>
           </div>
           <div className="flex items-center gap-1">
-            <FaCodeBranch className="h-3.5 w-3.5" />
+            <GitForkIcon size={14} />
             <span>0</span>
           </div>
         </div>

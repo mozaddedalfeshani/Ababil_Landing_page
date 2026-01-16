@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { SplashScreen } from "@/components/SplashScreen";
 
-const poppins = Poppins({
+const ubuntu = Ubuntu({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-geist-sans",
+  weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-ubuntu",
   display: "swap",
 });
 
@@ -103,7 +104,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://ababilx.imurad.me" />
         <meta name="theme-color" content="#0d1117" />
       </head>
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${ubuntu.variable} ${ubuntu.className} antialiased`}>
         <LanguageProvider>
           <SplashScreen>{children}</SplashScreen>
         </LanguageProvider>

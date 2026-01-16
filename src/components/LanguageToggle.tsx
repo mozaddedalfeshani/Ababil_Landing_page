@@ -1,25 +1,18 @@
 "use client";
 
-import * as React from "react";
-import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { IoLanguage } from "react-icons/io5";
+import { LanguageCircleIcon } from "hugeicons-react";
 
 export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
 
-  const toggleLanguage = () => {
-    setLanguage(language === "en" ? "bn" : "en");
-  };
-
   return (
-    <Button
-      variant="ghost"
-      size="sm"
-      onClick={toggleLanguage}
-      className="gap-2 text-[#3674B5]">
-      <IoLanguage className="h-4 w-4" />
-      <span className="font-semibold">{language === "en" ? "বাং" : "EN"}</span>
-    </Button>
+    <button
+      onClick={() => setLanguage(language === "en" ? "bn" : "en")}
+      className="p-2 rounded-lg text-[#c9d1d9] hover:text-[#58a6ff] hover:bg-[#21262d] transition-colors"
+      aria-label="Toggle language"
+      title={language === "en" ? "বাংলা" : "English"}>
+      <LanguageCircleIcon size={22} />
+    </button>
   );
 }

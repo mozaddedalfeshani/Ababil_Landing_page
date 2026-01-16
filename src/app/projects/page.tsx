@@ -1,13 +1,10 @@
-import { Hero } from "@/components/Hero";
-import { WhyAbabil } from "@/components/WhyAbabil";
-import { GitHubLinks } from "@/components/GitHubLinks";
+import { ProjectsHero, ProjectGrid } from "@/components/projects";
 
-export default function Home() {
+export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-[#0d1117]">
-      <Hero />
-      <WhyAbabil />
-      <GitHubLinks />
+      <ProjectsHero />
+      <ProjectGrid />
 
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-[#30363d] bg-[#0d1117]">

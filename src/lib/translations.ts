@@ -30,7 +30,7 @@ export interface Translation {
 export const translations: Record<Language, Translation> = {
   en: {
     hero: {
-      title: "AbabilX",
+      title: "Ababil X",
       tagline: "Open Source Organization",
       downloadButton: "View Projects",
       githubButton: "GitHub Organization",
@@ -57,7 +57,7 @@ export const translations: Record<Language, Translation> = {
   },
   bn: {
     hero: {
-      title: "আবাবিলএক্স",
+      title: "আবাবিল এক্স",
       tagline: "ওপেন সোর্স সংস্থা",
       downloadButton: "প্রজেক্ট দেখুন",
       githubButton: "গিটহাব অর্গানাইজেশন",

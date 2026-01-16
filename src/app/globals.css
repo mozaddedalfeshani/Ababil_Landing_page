@@ -1,30 +1,30 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Custom Color Palette */
-  --color-primary-dark: #3674B5;
-  --color-primary: #578FCA;
-  --color-primary-light: #A1E3F9;
-  --color-primary-lighter: #D1F8EF;
+  /* Custom Color Palette - Dark Theme */
+  --color-primary-dark: #1f6feb;
+  --color-primary: #58a6ff;
+  --color-primary-light: #79c0ff;
+  --color-primary-lighter: #a5d6ff;
 
-  /* Base Colors - Light Theme Only */
-  --color-background: #ffffff;
-  --color-foreground: #1a1a2e;
-  --color-card: #ffffff;
-  --color-card-foreground: #1a1a2e;
-  --color-popover: #ffffff;
-  --color-popover-foreground: #1a1a2e;
-  --color-secondary: #D1F8EF;
-  --color-secondary-foreground: #3674B5;
-  --color-muted: #A1E3F9;
-  --color-muted-foreground: #3674B5;
-  --color-accent: #578FCA;
-  --color-accent-foreground: #ffffff;
-  --color-destructive: #ef4444;
+  /* Base Colors - Dark Theme */
+  --color-background: #0d1117;
+  --color-foreground: #c9d1d9;
+  --color-card: #161b22;
+  --color-card-foreground: #c9d1d9;
+  --color-popover: #161b22;
+  --color-popover-foreground: #c9d1d9;
+  --color-secondary: #21262d;
+  --color-secondary-foreground: #c9d1d9;
+  --color-muted: #30363d;
+  --color-muted-foreground: #8b949e;
+  --color-accent: #58a6ff;
+  --color-accent-foreground: #0d1117;
+  --color-destructive: #f85149;
   --color-destructive-foreground: #ffffff;
-  --color-border: #A1E3F9;
-  --color-input: #D1F8EF;
-  --color-ring: #3674B5;
+  --color-border: #30363d;
+  --color-input: #21262d;
+  --color-ring: #58a6ff;
 
   /* Fonts */
   --font-sans: var(--font-geist-sans);
@@ -84,52 +84,61 @@ html {
   animation: slide-in 0.6s ease-out;
 }
 
-/* Custom gradient backgrounds using the color palette */
+/* Custom gradient backgrounds - Dark Theme */
 .gradient-primary {
-  background: linear-gradient(135deg, #3674B5 0%, #578FCA 100%);
+  background: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%);
 }
 
 .gradient-accent {
-  background: linear-gradient(135deg, #578FCA 0%, #A1E3F9 100%);
+  background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%);
 }
 
 .gradient-light {
-  background: linear-gradient(135deg, #A1E3F9 0%, #D1F8EF 100%);
+  background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
 }
 
-/* Glass morphism effect */
+/* Glass morphism effect - Dark Theme */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(22, 27, 34, 0.8);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(161, 227, 249, 0.5);
+  border: 1px solid rgba(48, 54, 61, 0.5);
 }
 
 /* Text color utilities */
 .text-primary-dark {
-  color: #3674B5;
+  color: #1f6feb;
 }
 
 .text-primary {
-  color: #578FCA;
+  color: #58a6ff;
 }
 
 .text-primary-light {
-  color: #A1E3F9;
+  color: #79c0ff;
 }
 
 /* Background utilities */
 .bg-primary-dark {
-  background-color: #3674B5;
+  background-color: #1f6feb;
 }
 
 .bg-primary {
-  background-color: #578FCA;
+  background-color: #58a6ff;
 }
 
 .bg-primary-light {
-  background-color: #A1E3F9;
+  background-color: #79c0ff;
 }
 
 .bg-primary-lighter {
-  background-color: #D1F8EF;
+  background-color: #a5d6ff;
+}
+
+/* Dark surface utilities */
+.bg-surface {
+  background-color: #161b22;
+}
+
+.bg-surface-elevated {
+  background-color: #21262d;
 }

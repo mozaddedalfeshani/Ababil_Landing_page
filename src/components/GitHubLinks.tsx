@@ -2,128 +2,107 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { FaGithub, FaStar } from "react-icons/fa";
-import { IoAlertCircle, IoChatbubbles } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import { IoCodeSlash, IoPeople, IoChatbubbles } from "react-icons/io5";
 import { GoPackage } from "react-icons/go";
 
 export function GitHubLinks() {
   const { t } = useLanguage();
 
-  const repoUrl = "https://github.com/AbabilX/Ababil-Studio";
+  const orgUrl = "https://github.com/AbabilX";
 
   return (
-    <section className="py-24 px-6 bg-[#D1F8EF]/50">
+    <section className="py-24 px-6 bg-[#161b22]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center space-y-4 mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-[#3674B5] to-[#578FCA] bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
             {t.github.title}
           </h2>
-        </div>
-
-        {/* GitHub Badges */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-          <img
-            src={`https://img.shields.io/github/stars/AbabilX/Ababil-Studio?style=for-the-badge&logo=github`}
-            alt="GitHub stars"
-            className="h-7"
-          />
-          <img
-            src={`https://img.shields.io/github/forks/AbabilX/Ababil-Studio?style=for-the-badge&logo=github`}
-            alt="GitHub forks"
-            className="h-7"
-          />
-          <img
-            src={`https://img.shields.io/github/issues/AbabilX/Ababil-Studio?style=for-the-badge&logo=github`}
-            alt="GitHub issues"
-            className="h-7"
-          />
-          <img
-            src={`https://img.shields.io/github/license/AbabilX/Ababil-Studio?style=for-the-badge`}
-            alt="License"
-            className="h-7"
-          />
+          <p className="text-xl text-[#8b949e] max-w-2xl mx-auto">
+            Contribute to our projects and help us build better software
+          </p>
         </div>
 
         {/* Quick Links */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Card className="border-[#A1E3F9] bg-white">
+          <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#3674B5]/10 flex items-center justify-center mx-auto mb-3">
-                <FaGithub className="h-6 w-6 text-[#3674B5]" />
+              <div className="w-12 h-12 rounded-full bg-[#58a6ff]/10 flex items-center justify-center mx-auto mb-3">
+                <FaGithub className="h-6 w-6 text-[#58a6ff]" />
               </div>
-              <CardTitle className="text-lg text-[#3674B5]">
+              <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.viewRepo}
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
               <a
-                href={repoUrl}
+                href={orgUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
                 <FaGithub className="h-4 w-4 mr-2" />
-                Repository
+                AbabilX
               </a>
             </CardContent>
           </Card>
 
-          <Card className="border-[#A1E3F9] bg-white">
+          <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#578FCA]/10 flex items-center justify-center mx-auto mb-3">
-                <GoPackage className="h-6 w-6 text-[#578FCA]" />
+              <div className="w-12 h-12 rounded-full bg-[#79c0ff]/10 flex items-center justify-center mx-auto mb-3">
+                <GoPackage className="h-6 w-6 text-[#79c0ff]" />
               </div>
-              <CardTitle className="text-lg text-[#3674B5]">
+              <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.releases}
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
               <a
-                href={`${repoUrl}/releases`}
+                href={`${orgUrl}?tab=repositories`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
                 <GoPackage className="h-4 w-4 mr-2" />
-                Releases
+                Repositories
               </a>
             </CardContent>
           </Card>
 
-          <Card className="border-[#A1E3F9] bg-white">
+          <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#A1E3F9]/30 flex items-center justify-center mx-auto mb-3">
-                <IoAlertCircle className="h-6 w-6 text-[#3674B5]" />
+              <div className="w-12 h-12 rounded-full bg-[#58a6ff]/10 flex items-center justify-center mx-auto mb-3">
+                <IoCodeSlash className="h-6 w-6 text-[#58a6ff]" />
               </div>
-              <CardTitle className="text-lg text-[#3674B5]">
+              <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.issues}
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
               <a
-                href={`${repoUrl}/issues`}
+                href={`${orgUrl}/Ababil-Studio/issues`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
-                <IoAlertCircle className="h-4 w-4 mr-2" />
-                Issues
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
+                <IoPeople className="h-4 w-4 mr-2" />
+                Contribute
               </a>
             </CardContent>
           </Card>
 
-          <Card className="border-[#A1E3F9] bg-white">
+          <Card className="border-[#30363d] bg-[#0d1117]">
             <CardHeader className="text-center pb-3">
-              <div className="w-12 h-12 rounded-full bg-[#D1F8EF] flex items-center justify-center mx-auto mb-3">
-                <IoChatbubbles className="h-6 w-6 text-[#578FCA]" />
+              <div className="w-12 h-12 rounded-full bg-[#79c0ff]/10 flex items-center justify-center mx-auto mb-3">
+                <IoChatbubbles className="h-6 w-6 text-[#79c0ff]" />
               </div>
-              <CardTitle className="text-lg text-[#3674B5]">
+              <CardTitle className="text-lg text-[#c9d1d9]">
                 {t.github.discussions}
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center pt-0">
               <a
-                href={`${repoUrl}/discussions`}
+                href={`${orgUrl}/Ababil-Studio/discussions`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border-2 border-[#578FCA] text-[#3674B5] font-medium bg-white">
+                className="inline-flex items-center justify-center w-full px-4 py-2 rounded-md border border-[#30363d] text-[#c9d1d9] font-medium bg-[#21262d] hover:bg-[#30363d] transition-colors">
                 <IoChatbubbles className="h-4 w-4 mr-2" />
                 Discussions
               </a>
@@ -133,16 +112,16 @@ export function GitHubLinks() {
 
         {/* Call to Action */}
         <div className="mt-12 text-center">
-          <p className="text-lg text-[#578FCA] mb-6">
+          <p className="text-lg text-[#8b949e] mb-6">
             {t.footer.madeWith} ❤️ · {t.footer.openSource}
           </p>
           <a
-            href={repoUrl}
+            href={orgUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-md bg-gradient-to-r from-[#3674B5] to-[#578FCA] text-white font-medium text-lg shadow-lg">
-            <FaStar className="h-5 w-5" />
-            Star on GitHub
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-md bg-gradient-to-r from-[#1f6feb] to-[#58a6ff] text-white font-medium text-lg shadow-lg hover:opacity-90 transition-opacity">
+            <FaGithub className="h-5 w-5" />
+            Follow on GitHub
           </a>
         </div>
       </div>

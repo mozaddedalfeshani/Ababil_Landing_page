@@ -15,30 +15,30 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ababilx.imurad.me"),
   title: {
     default:
-      "Ababil Studio - Free Open Source Postman Alternative | Rust-Powered API Testing",
-    template: "%s | Ababil Studio",
+      "AbabilX - Open Source Organization | Building Practical Developer Tools",
+    template: "%s | AbabilX",
   },
   description:
-    "Free, open-source Postman alternative built with Rust. Blazing-fast API testing, lightweight, privacy-first. No account required. Download now!",
+    "AbabilX is a community-driven open-source organization building practical, clean, and impactful software for developers and learners worldwide.",
   keywords: [
-    "Postman alternative",
-    "free Postman alternative",
-    "open source API testing",
-    "Rust API client",
-    "free API testing tool",
-    "lightweight HTTP client",
-    "REST API testing",
-    "privacy-first API tool",
+    "AbabilX",
+    "open source organization",
     "developer tools",
-    "Ababil Studio",
-    "open source",
+    "open source software",
+    "developer community",
+    "productivity tools",
+    "learning projects",
+    "open collaboration",
+    "MIT license",
     "free software",
+    "developer utilities",
+    "programming tools",
   ],
-  authors: [{ name: "Ababil Studio Team" }],
-  creator: "Ababil Studio",
-  publisher: "Ababil Studio",
-  applicationName: "Ababil Studio",
-  category: "Developer Tools",
+  authors: [{ name: "AbabilX Team" }],
+  creator: "AbabilX",
+  publisher: "AbabilX",
+  applicationName: "AbabilX",
+  category: "Technology",
 
   // Icons
   icons: {
@@ -55,16 +55,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://ababilx.imurad.me",
-    siteName: "Ababil Studio",
-    title: "Ababil Studio - Free Open Source Postman Alternative",
+    siteName: "AbabilX",
+    title: "AbabilX - Open Source Organization",
     description:
-      "Free, open-source Postman alternative built with Rust. Blazing-fast, lightweight, privacy-first API testing. No account required!",
+      "Building practical, clean, and impactful open-source software for developers and learners worldwide. Join our community!",
     images: [
       {
         url: "/banner.png",
         width: 1200,
         height: 630,
-        alt: "Ababil Studio - Free Open Source Postman Alternative",
+        alt: "AbabilX - Open Source Organization",
       },
     ],
   },
@@ -72,9 +72,9 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Ababil Studio - Free Postman Alternative | Rust-Powered",
+    title: "AbabilX - Open Source Organization",
     description:
-      "Free, open-source Postman alternative. Rust-powered, blazing-fast, lightweight, privacy-first. No account required!",
+      "Community-driven open-source organization building practical developer tools and learning resources. Free and open!",
     images: ["/banner.png"],
   },
 
@@ -98,10 +98,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="canonical" href="https://ababilx.imurad.me" />
-        <meta name="theme-color" content="#3674B5" />
+        <meta name="theme-color" content="#0d1117" />
       </head>
       <body className={`${poppins.variable} antialiased`}>
         <LanguageProvider>

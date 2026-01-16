@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { WhyAbabil } from "@/components/WhyAbabil";
 import { GitHubLinks } from "@/components/GitHubLinks";
+import { Contributors } from "@/components/Contributors";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <WhyAbabil />
       <GitHubLinks />
+      <Contributors />
 
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-[#30363d] bg-[#0d1117]">

@@ -7,6 +7,7 @@ import { SplashScreen } from "@/components/SplashScreen";
 const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
   variable: "--font-ubuntu",
   display: "swap",
 });

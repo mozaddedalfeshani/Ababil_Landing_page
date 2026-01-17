@@ -31,7 +31,7 @@ const CONTRIBUTORS: Contributor[] = [
     id: 59507062,
     login: "contributor2",
     avatar_url: "https://avatars.githubusercontent.com/u/59507062?v=4",
-    html_url: "https://github.com/users/59507062",
+    html_url: "https://github.com/saminsohag",
     role: {
       en: "Core Contributor",
       bn: "মূল কন্ট্রিবিউটর",
@@ -41,7 +41,7 @@ const CONTRIBUTORS: Contributor[] = [
     id: 110667129,
     login: "contributor3",
     avatar_url: "https://avatars.githubusercontent.com/u/110667129?v=4",
-    html_url: "https://github.com/users/110667129",
+    html_url: "https://github.com/junayedahamed",
     role: {
       en: "Core Contributor",
       bn: "মূল কন্ট্রিবিউটর",
